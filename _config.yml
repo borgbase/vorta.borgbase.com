@@ -1,0 +1,22 @@
+title: Vorta for Borg
+description: A Desktop Backup Client for Borg Backup
+baseurl: ""
+url: "https://vorta.borgbase.com"
+
+permalink: pretty
+include: ["_redirects"]
+exclude: ["README.md", "Rakefile"]
+
+search_enabled: true
+
+aux_links:
+  "Vorta on GitHub":
+    - "https://github.com/borgbase/vorta"
+
+theme: just-the-docs
+color_scheme: nil
+
+ga_tracking: UA-41046852-10
+
+plugins:
+  - jekyll-seo-tag
