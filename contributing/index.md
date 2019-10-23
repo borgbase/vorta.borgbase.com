@@ -37,6 +37,14 @@ Then run as Python script. Any changes from your source folder should be reflect
 $ vorta
 ```
 
+### Linux with flatpak
+
+The recommended way to build Vorta on Linux is via Flatpak.
+This can be done by following these [instructions](https://wiki.gnome.org/Newcomers/BuildProject).
+They first guide you through the installation of the IDE GNOME Builder.
+GNOME Builder is then used to clone, build and run Vorta.
+
+
 ## Working on the GUI
 Qt Creator is used to edit views. Install from [their site](https://www.qt.io/download) or using Homebrew and then open the .ui files in `vorta/assets/UI` with Qt Creator:
 ```
