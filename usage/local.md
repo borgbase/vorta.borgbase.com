@@ -21,7 +21,7 @@ After starting Vorta, you should see a new settings window.
 
 ## Step 2 - Setting up Local Repository
 
-Click on the **Repository** drop down menu, and select **Initialize New Repository** After clicking, a new window should pop up.
+Click on the **Repository** drop down menu, and select **Initialize New Repository**.  After clicking, a new window should pop up.
 
 <img src="/assets/images/vorta/local2.png" alt="" width="400" />
 
