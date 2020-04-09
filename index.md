@@ -35,9 +35,12 @@ For available packages and instructions, see [Download](download).
 Learn how to set up a backup workflow to a [local](usage/local) or [remote](usage/remote) destination. And most importantly, how to restore files later.
 
 ## Getting Involved
-Want to contribute to Vorta? Great! See [Contributing](contributing) to see how you can help with coding, packaging and translation.
+Want to contribute to Vorta? Great! See [Contributing](contributing) to see how you can help with coding, packaging and translation. See our [Github contributors page](https://github.com/borgbase/vorta/blob/master/CONTRIBUTORS.md) for the people behind Vorta.
+
+Thanks to [Alexander Taylor](https://github.com/meowmix3) for expanding the documentation.
 
 ---
 
 ## License
 Vorta is open source and licenced under the Gnu GPL.
+
