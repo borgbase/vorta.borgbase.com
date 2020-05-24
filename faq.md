@@ -17,9 +17,8 @@ Vorta is based on Qt, which also works on Windows. Get in touch if you have a wo
 
 ### Can I migrate my profiles and settings to a new installation of Vorta?
 Yes. You can find your settings in:
-
-    /app/com.borgbase.Vorta/data/Vorta//settings.db if you use flatpak
-    ~/.local/share/Vorta/settings.db if you use pip
+- `~/.var/app/com.borgbase.Vorta/data/Vorta/settings.db` if you use flatpak
+- `~/.local/share/Vorta/settings.db` if you use pip
 
 Copy that file to the same location on the new installtion.
 
