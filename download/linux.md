@@ -20,6 +20,7 @@ The most generic way is to install it as Python package using [PIP](https://pip.
 ```
 $ pip3 install --upgrade setuptools pip
 $ pip3 install vorta
+$ export PATH=$PATH:~/.local/bin
 ```
 
 ## Distribution Packages
