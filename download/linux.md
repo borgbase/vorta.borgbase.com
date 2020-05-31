@@ -21,6 +21,23 @@ The most generic way is to install it as Python package using [PIP](https://pip.
 $ pip3 install vorta
 ```
 
+### Add .desktop file
+In ~/.local/share/applications, create a vorta.desktop file
+```
+$ nano ~/.local/share/applications/vorta.desktop
+```
+and add the following in it replacing $USER with your username :
+```
+[Desktop Entry]
+Type=Application
+Name=Vorta
+Icon=/home/$USER/.local/lib/python3.7/site-packages/vorta/assets/icons/app-icon.icns
+Path=/home/$USER/.local/bin/
+Exec=/home/$USER/.local/bin/vorta
+StartupNotify=false
+X-UnityGenerated=true
+```
+
 ## Distribution Packages
 
 ### Arch Linux
