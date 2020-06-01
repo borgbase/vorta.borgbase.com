@@ -21,22 +21,9 @@ The most generic way is to install it as Python package using [PIP](https://pip.
 $ pip3 install vorta
 ```
 
-### Add .desktop file
-In ~/.local/share/applications, create a vorta.desktop file
-```
-$ nano ~/.local/share/applications/vorta.desktop
-```
-and add the following in it replacing $USER with your username :
-```
-[Desktop Entry]
-Type=Application
-Name=Vorta
-Icon=/home/$USER/.local/lib/python3.7/site-packages/vorta/assets/icons/app-icon.icns
-Path=/home/$USER/.local/bin/
-Exec=/home/$USER/.local/bin/vorta
-StartupNotify=false
-X-UnityGenerated=true
-```
+### Add Entry to Application Launcher
+You can add a `.desktop` entry to get a link to Vorta in your application launcher, usually `~/.local/share/applications/vorta.desktop`. Use the template available [here](https://github.com/borgbase/vorta/blob/master/src/vorta/assets/metadata/com.borgbase.Vorta.desktop) and adjust the `Exec` and [`Icon`](https://github.com/borgbase/vorta/blob/master/src/vorta/assets/icons/scalable/com.borgbase.Vorta.svg) paths if necessary. 
+
 
 ## Distribution Packages
 
