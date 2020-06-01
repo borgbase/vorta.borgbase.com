@@ -19,5 +19,3 @@ Choose the operating system on which you plan to use Vorta below:
 <span class="fs-8">
 [Windows](/download/windows){: .btn }
 </span>
-
-Feeling adventurous? Try the new (incomplete) [Golang implementation of Vorta](https://github.com/borgbase/vorta-go/).

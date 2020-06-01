@@ -8,7 +8,13 @@ parent: Usage
 
 # Restore Files from Backup
 
-**Note:** This article assumes you have Vorta correctly configured and making backups.  If you need help with this, please check out the other [Usage](/usage) articles in the sidebar, or visit the [Download](/download) page for different install options.
+### Prerequisites
+
+You should think about a future restore scenario before it happens. For a successful restore, you need the following:
+
+- **Repo Passphrase or Keyfile**: This is the most important. Always keep a copy of your passphrase (when using a repokey) or keyfile in a safe place, off the source machine.
+- **Vorta and/or Borg Backup Installation**: This article assumes you have Vorta correctly configured and making backups. If you need help with this, please check out the other [Usage](/usage) articles in the sidebar, or visit the [Download](/download) page for different install options.
+- **Access to the Repo**: When using a remote repo, you probably need to set up SSH authentication again. For local repos, the hard drive or file share should be accessible. This is generally less critical. Also note that the private SSH key is only used to connect to the repo and is unrelated to Borg's own encryption.
 
 ## Step 1 - Launch Vorta
 
