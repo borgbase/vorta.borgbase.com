@@ -15,6 +15,15 @@ Borg, the underlying library we use doesn't work directly with Windows, but work
 
 Vorta is based on Qt, which also works on Windows. Get in touch if you have a working setup on Windows.
 
+### Can I migrate my profiles and settings to a new installation of Vorta?
+Yes. You can find your settings in:
+- `~/.var/app/com.borgbase.Vorta/data/Vorta/settings.db` if you use flatpak
+- `~/.local/share/Vorta/settings.db` if you use pip
+
+Copy that file to the same location on the new installtion.
+
+We are working on a way to do this via the GUI -- check [this GitHub issue](https://github.com/borgbase/vorta/issues/462) for details.
+
 ### Something doesn't work. Where can I get help?
 For general questions or to simply talk about Vorta, hit us up at [Matrix](https://matrix.to/#/#vorta:matrix.org)
 
