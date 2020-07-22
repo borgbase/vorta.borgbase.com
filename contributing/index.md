@@ -52,7 +52,26 @@ $ brew cask install qt-creator
 $ brew install qt
 ```
 
-For UI icons, we use Fontawesome. You can browse available icons [here](https://fontawesome.com/icons) and download them as SVG [here](https://github.com/encharm/Font-Awesome-SVG-PNG). New icons are first added to both `src/vorta/assets/icons/dark/collection.qrc` and `src/vorta/assets/icons/light/collection.qrc`. Then, the command `make icon-resources` is run to compile them to a resource file which is used by the UI files.
+For UI icons, we use Fontawesome. You can browse available icons [here](https://fontawesome.com/icons) and download them as SVG [here](https://github.com/encharm/Font-Awesome-SVG-PNG). New icons are first added to src/vorta/assets/icons, and can be gotten with the `get_colored_icon` function
+
+### Notes for Developers
+
+- Original strings in `.ui` and `.py` must be American English (en_US) and ASCII.
+- In English, not translated:
+  - log messages (log file as well as log output on console or elsewhere)
+  - other console output, print().
+  - docs
+  - py source code, comments, docstrings
+
+- Translated:
+  - GUI texts / messages
+
+- In Qt (sub)classes, use self.tr("English string"), scope will
+  be the instance class name.
+- Elsewhere use vorta.i18n.translate("scopename", "English string")
+- To only mark for string extraction, but not immediately translate,
+  use vorta.i18n.trans_late function.
+  Later, to translate, use vorta.i18n.translate (giving same scope).
 
 ## Building Binaries
 To build a macOS app package:
