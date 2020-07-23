@@ -42,25 +42,6 @@ Translations are managed on [Transifex](https://www.Transifex.com/borgbase/vorta
 - Compile: `make translations-to-qm`
 - Test with specific translation: `LANG=de vorta`
 - Scale strings to test UI: `LANG=de TRANS_SCALE=200 vorta --foreground`
-
-### Notes for Developers
-
-- Original strings in `.ui` and `.py` must be American English (en_US) and ASCII.
-- In English, not translated:
-  - log messages (log file as well as log output on console or elsewhere)
-  - other console output, print().
-  - docs
-  - py source code, comments, docstrings
-
-- Translated:
-  - GUI texts / messages
-
-- In Qt (sub)classes, use self.tr("English string"), scope will
-  be the instance class name.
-- Elsewhere use vorta.i18n.translate("scopename", "English string")
-- To only mark for string extraction, but not immediately translate,
-  use vorta.i18n.trans_late function.
-  Later, to translate, use vorta.i18n.translate (giving same scope).
   
 ### Style Guide/Glossary
 
