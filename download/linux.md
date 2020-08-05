@@ -26,7 +26,7 @@ You can add a `.desktop` entry to get a link to Vorta in your application launch
 
 
 ### Add Icons
-You can add the Vorta icon to your icons directory, usually `~/.local/share/applications/icons`. Download it [here](https://raw.githubusercontent.com/borgbase/vorta/master/package/icon.svg) and copy to your icons folder as `vorta.svg`, or run the following code in any modern shell (Requires wget):
+You can add the Vorta icon to your icons directory, usually `~/.local/share/applications/icons`. Download it [here](https://raw.githubusercontent.com/borgbase/vorta/master/package/icon.svg) and copy to your icons folder as `vorta.svg`, or put the following code into a file and run it in any modern shell (Requires wget):
 ```
 : ${XDG_DATA_HOME:="${HOME}/.local/share"}
 ICON_DIR=$XDG_DATA_HOME/icons
