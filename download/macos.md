@@ -7,11 +7,16 @@ parent: Download
 ---
 # Download for macOS
 
-## Binary Install
-Download a pre-built app bundle for macOS from [Releases](https://github.com/borgbase/vorta/releases).
-
-## Package Manager
-Install via [Homebrew Cask](https://brew.sh/):
+The recommended installation method is via [Homebrew Cask](https://brew.sh/):
 ```
 $ brew cask install vorta
 ```
+
+Even though Vorta comes with Borg built-in, using an official Borg installation is recommended:
+```
+$ brew install borgbackup
+```
+
+## Binary Install
+If you don't use Homebrew, you can find [releases](https://github.com/borgbase/vorta/releases) on our Github page.
+
