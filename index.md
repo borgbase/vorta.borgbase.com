@@ -12,7 +12,7 @@ permalink: /
 Vorta is a backup client for macOS and Linux desktops. It integrates the mighty [Borg Backup](https://borgbackup.readthedocs.io/en/stable/) with your favorite desktop environment to protect your data from disk failure, ransomware and theft.
 {: .fs-6 .fw-300 }
 
-[Download](download){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Get Involved](contributing){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Install](install){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Get Involved](contributing){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ![](https://files.qmax.us/vorta-screencast-6.gif)
 
@@ -27,9 +27,9 @@ Vorta is a backup client for macOS and Linux desktops. It integrates the mighty 
 - **One place** to view all point-in-time archives and restore individual files.
 
 ## Installation
-Vorta should work on all platforms that support Qt and Borg. This includes macOS, Ubuntu, Debian, Fedora, Arch Linux and many others. Windows is currently not supported by Borg, but this may change in the future.
+Vorta should work on all platforms that support Qt and Borg. This includes macOS, Ubuntu, Debian, Fedora, Arch Linux and many others. Windows is currently not fully supported by Borg, but this may change in the future.
 
-For available packages and instructions, see [Download](download).
+See [here](install) for available packages and install instructions.
 
 ## Usage
 Learn how to set up a backup workflow to a [local](usage/local) or [remote](usage/remote) destination. And most importantly, how to restore files later.

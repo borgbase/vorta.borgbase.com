@@ -1,5 +1,5 @@
 ---
-title: Download
+title: Install
 nav_order: 2
 layout: page
 description: ""
@@ -11,11 +11,11 @@ has_toc: false
 Choose the operating system on which you plan to use Vorta below:
 
 <span class="fs-8">
-[macOS](/download/macos){: .btn }
+[macOS](/install/macos){: .btn }
 </span>
 <span class="fs-8">
-[Linux](/download/linux){: .btn }
+[Linux](/install/linux){: .btn }
 </span>
 <span class="fs-8">
-[Windows](/download/windows){: .btn }
+[Windows](/install/windows){: .btn }
 </span>

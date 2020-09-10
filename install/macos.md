@@ -5,7 +5,7 @@ layout: page
 description: ""
 parent: Download
 ---
-# Download for macOS
+# Install on macOS
 
 The recommended installation method is via [Homebrew Cask](https://brew.sh/):
 ```
