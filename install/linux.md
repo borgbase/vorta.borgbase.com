@@ -48,7 +48,7 @@ Maintained by [@kyrios123](https://github.com/kyrios123).
 
 
 ### Ubuntu Linux
-Use the unoffical [PPA](https://launchpad.net/~samuel-w1/+archive/ubuntu/vorta/). Supports 20.04 and greater. Command for install:
+Use the official [PPA](https://launchpad.net/~samuel-w1/+archive/ubuntu/vorta/). Supports 20.04 and greater. Command for install:
 ```
 $ sudo add-apt-repository ppa:samuel-w1/vorta
 $ sudo apt-get update
