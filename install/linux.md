@@ -41,9 +41,9 @@ Maintained by [@bjo81](https://github.com/bjo81).
 
 ### Solus Linux
 Use the official [package](https://dev.getsol.us/source/vorta/). Command for install:
-
-`$ sudo eopkg it vorta`
-
+```
+$ sudo eopkg it vorta
+```
 Maintained by [@kyrios123](https://github.com/kyrios123).
 
 
