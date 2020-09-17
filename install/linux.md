@@ -47,6 +47,16 @@ Use the official [package](https://dev.getsol.us/source/vorta/). Command for ins
 Maintained by [@kyrios123](https://github.com/kyrios123).
 
 
+### Ubuntu Linux
+Use the unoffical [PPA](https://launchpad.net/~samuel-w1/+archive/ubuntu/vorta/). Supports 20.04 and greater. Command for install:
+```
+$ sudo add-apt-repository ppa:samuel-w1/vorta
+$ sudo apt-get update
+$ sudo apt-get install vorta
+```
+Maintained by [@samuel-w](https://github.com/samuel-w).
+
+
 **Looking to maintain a package?** [Open](https://github.com/borgbase/vorta/issues/new) an issue or pull request and it will be added here.
 
 
