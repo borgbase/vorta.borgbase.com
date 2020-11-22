@@ -12,9 +12,9 @@ The recommended installation method is via [Homebrew Cask](https://brew.sh/):
 $ brew cask install vorta
 ```
 
-Even though Vorta comes with Borg built-in, using an official Borg installation is recommended:
+This will install Vorta and BorgBackup for you. If you also need the mount feature, install FUSE as well:
 ```
-$ brew install borgbackup
+$ brew cask install osxfuse
 ```
 
 ## Binary Install
