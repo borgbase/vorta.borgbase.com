@@ -7,6 +7,17 @@ parent: Download
 ---
 # Install on Linux
 
+## Flatpak
+Can be installed on any Linux distribution. Find Vorta on [Flathub](https://flathub.org/apps/details/com.borgbase.Vorta). To install:
+```
+$ flatpak install flathub com.borgbase.Vorta
+```
+
+Settings can be transferred by copying `~/.local/share/Vorta/settings.db` to `~/.var/app/com.borgbase.Vorta/data/Vorta/`.
+
+Maintained by [@Hofer-Julian](https://github.com/Hofer-Julian).
+
+
 ## Distribution Packages
 
 ### Arch Linux
@@ -36,21 +47,10 @@ $ sudo apt-get install vorta
 Maintained by [@samuel-w](https://github.com/samuel-w).
 
 
-## Flatpak
-Can be installed on any Linux distribution. Find Vorta on [Flathub](https://flathub.org/apps/details/com.borgbase.Vorta). To install:
-```
-$ flatpak install flathub com.borgbase.Vorta
-```
-
-Settings can be transferred by copying `~/.local/share/Vorta/settings.db` to `~/.var/app/com.borgbase.Vorta/data/Vorta/`.
-
-Maintained by [@Hofer-Julian](https://github.com/Hofer-Julian).
-
-
 ## Install from Source
-The most generic way is to install it as Python package using [PIP](https://pip.readthedocs.io/en/stable/installing/). First [install](https://borgbackup.readthedocs.io/en/stable/installation.html) Borg using the package of your distribution or via PyPI. The latter needs some additional [source packages](https://borgbackup.readthedocs.io/en/stable/installation.html#dependencies). Then install Vorta from PyPI. Your local Python version must be >= 3.6.
+If there top two options do not work, Vorta can be installed as a Python package using [pipx](https://pypi.org/project/pipx/). First [install](https://borgbackup.readthedocs.io/en/stable/installation.html) Borg using the package of your distribution or via PyPI. The latter needs some additional [source packages](https://borgbackup.readthedocs.io/en/stable/installation.html#dependencies). Then install Vorta from PyPI. Your local Python version must be >= 3.6.
 ```
-$ pip3 install vorta
+$ pipx install vorta
 ```
 
 ### Add Entry to Application Launcher
