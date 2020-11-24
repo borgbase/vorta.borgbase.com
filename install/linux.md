@@ -48,7 +48,7 @@ Maintained by [@samuel-w](https://github.com/samuel-w).
 
 
 ## Install from Source
-If there top two options do not work, Vorta can be installed as a Python package using [pipx](https://pypi.org/project/pipx/). First [install](https://borgbackup.readthedocs.io/en/stable/installation.html) Borg using the package of your distribution or via PyPI. The latter needs some additional [source packages](https://borgbackup.readthedocs.io/en/stable/installation.html#dependencies). Then install Vorta from PyPI. Your local Python version must be >= 3.6.
+If there top two options do not work, Vorta can be installed as a Python package using [PIP](https://pip.readthedocs.io/en/stable/installing/). First [install](https://borgbackup.readthedocs.io/en/stable/installation.html) Borg using the package of your distribution or via PyPI. The latter needs some additional [source packages](https://borgbackup.readthedocs.io/en/stable/installation.html#dependencies). Then install Vorta from PyPI. Your local Python version must be >= 3.6.
 ```
 $ pipx install vorta
 ```
