@@ -37,6 +37,14 @@ Then run as Python script. Any changes from your source folder should be reflect
 $ vorta
 ```
 
+#### Working on the GUI
+
+Qt Creator is used to edit views. Install from [their site](https://www.qt.io/download) or using Homebrew and then open the .ui files in `vorta/assets/UI` with Qt Creator:
+```
+$ brew cask install qt-creator
+$ brew install qt
+```
+
 ### Linux with flatpak
 
 The recommended way to build Vorta on Linux is via Flatpak.
@@ -45,16 +53,15 @@ They first guide you through the installation of the IDE GNOME Builder.
 GNOME Builder is then used to clone, build and run Vorta.
 
 
-## Working on the GUI
-Qt Creator is used to edit views. Install from [their site](https://www.qt.io/download) or using Homebrew and then open the .ui files in `vorta/assets/UI` with Qt Creator:
-```
-$ brew cask install qt-creator
-$ brew install qt
-```
+#### Working on the GUI
+
+Qt Creator is used to edit views. Install using your package manager (typically called `qt-creator` or `qtcreator`) or from [their site](https://www.qt.io/download) and then open the .ui files in `vorta/assets/UI` with Qt Creator.
+
+## Icons
 
 For UI icons, we use Fontawesome. You can browse available icons [here](https://fontawesome.com/icons) and download them as SVG [here](https://github.com/encharm/Font-Awesome-SVG-PNG). New icons are first added to src/vorta/assets/icons, and can be gotten with the `get_colored_icon` function
 
-### Notes for Developers
+## Notes for Developers
 
 - Original strings in `.ui` and `.py` must be American English (en_US) and ASCII.
 - In English, not translated:
