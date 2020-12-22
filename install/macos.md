@@ -7,16 +7,27 @@ parent: Download
 ---
 # Install on macOS
 
-The recommended installation method is via [Homebrew Cask](https://brew.sh/):
+The recommended installation method is via [Homebrew Cask](https://brew.sh/).
+
+If you plan to use Borg's mount feature to browse backups, you will need to install macFUSE and Borg's [own tap](https://github.com/borgbackup/homebrew-tap):
+
 ```
-$ brew cask install vorta
+$ brew install --cask osxfuse
+$ brew install borgbackup/tap/borgbackup-fuse
 ```
 
-This will install Vorta and BorgBackup for you. If you also need the mount feature, install FUSE as well:
+**OR** to install Borg **without** macFUSE/mount feature:
+
 ```
-$ brew cask install osxfuse
+$ brew install borgbackup
+```
+
+Then, as last step install Vorta 
+
+```
+$ brew install --cask vorta
 ```
 
 ## Binary Install
-If you don't use Homebrew, you can find [releases](https://github.com/borgbase/vorta/releases) on our Github page.
+If you don't use Homebrew, you can find [releases](https://github.com/borgbase/vorta/releases) on our Github page. This will usually work on the latest version of macOS only.
 
