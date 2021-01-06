@@ -7,8 +7,10 @@ parent: Usage
 ---
 # Setting up Vorta for Remote Backups
 
+**Update Dec 2020**: Privacy- and security researcher [Sun Knudsen](https://sunknudsen.com) made a nice [introductory video](https://www.youtube.com/watch?v=asZX2YbTaNE) on how to get started with Vorta and BorgBase on macOS. Recommended if you prefer a video and some more background. Watch it [here](https://www.youtube.com/watch?v=asZX2YbTaNE).
+
 ## Step 1 – Download Vorta
-Visit the [Download](/download) page for different install options.
+Visit the [Install](/install) page for different install options.
 
 If you chose the binary image for macOS, you will see the following installer image after downloading:
 
