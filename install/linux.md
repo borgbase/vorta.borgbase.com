@@ -19,7 +19,7 @@ Maintained by [@Hofer-Julian](https://github.com/Hofer-Julian).
 
 
 ## Distribution Packages
-
+[![Overview](https://repology.org/badge/vertical-allrepos/vorta.svg)](https://repology.org/project/vorta/versions)
 ### Arch Linux
 Use the [AUR package](https://aur.archlinux.org/packages/vorta/).
 ```
@@ -37,8 +37,15 @@ $ sudo eopkg it vorta
 Maintained by [@kyrios123](https://github.com/kyrios123).
 
 
-### Ubuntu Linux
-Use the official [PPA](https://launchpad.net/~samuel-w1/+archive/ubuntu/vorta/). Supports 20.04 and greater. Command for install:
+### Debian 11/Ubuntu 20.10
+Use the official [package](https://packages.debian.org/unstable/utils/vorta). Command for install:
+```
+$ sudo apt-get install vorta
+```
+
+
+### Ubuntu PPA
+Use the [PPA](https://launchpad.net/~samuel-w1/+archive/ubuntu/vorta/). It is more up to date. Supports 20.04 and greater. Command for install:
 ```
 $ sudo add-apt-repository ppa:samuel-w1/vorta
 $ sudo apt-get update
