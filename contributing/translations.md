@@ -43,13 +43,11 @@ Translations are managed on [Transifex](https://www.Transifex.com/borgbase/vorta
 - Compile: `make translations-to-qm`
 - Test with specific translation: `LANG=de vorta`
 - Scale strings to test UI: `LANG=de TRANS_SCALE=200 vorta --foreground`
-  
-We use Qt's translation framework. Some guidelines for translations:
-
-
 
 
 ### Style Guide/Glossary
+
+We use Qt's translation framework. Some guidelines for translations:
 
 - Original strings in `.ui` and `.py` must be American English (en_US) and ASCII.
 - Headings, buttons and dropdowns are titleized: "Apply Changes"
@@ -72,9 +70,8 @@ Translated:
 Add new strings for translation:
 - In Qt (sub)classes, use self.tr("English string"), scope will
   be the instance class name.
-- Elsewhere use vorta.i18n.translate("scopename", "English string")
-- To only mark for string extraction, but not immediately translate, use 
-  vorta.i18n.trans_late function. Later, to translate, use vorta.i18n.translate (giving same scope).
+- Elsewhere use `vorta.i18n.translate("scopename", "English string")`
+- To only mark a string, but not translate: `vorta.i18n.trans_late` (Translated string will be used later. E.g. when displaying settings.)
 
 
 ### Required Software

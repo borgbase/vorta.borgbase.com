@@ -17,16 +17,14 @@ To build a macOS app package, run the Github Actions workflow "Build macOS relea
 
 After downloading the app bundle, unzip it and open it via right-click > open to get around Gatekeeper.
 
-Once you are happy with the app, sign and package it as DMG locally using `make dist/Vorta.dmg`
+Once you are happy with the app, sign and package it as DMG locally using `make dist/Vorta.dmg`. For this step, XCode and `create-dmg` should be installed and those environment variables defined:
+
+- CERTIFICATE_NAME="Developer ID Application: Joe Doe (XXXXXX)"
+- APPLE_ID_USER="name@example.com"
+- APPLE_ID_PASSWORD="@keychain:Notarization"
 
 
 ## Linux with Flatpak
-
-The recommended way to build Vorta on Linux is via Flatpak. This can be done by following these [instructions](https://wiki.gnome.org/Newcomers/BuildProject).
-
-They first guide you through the installation of the IDE GNOME Builder. GNOME Builder is then used to clone, build and run Vorta.
-
-### Installing Flatpak
 
 Follow the setup guide on [flatpak.org](http://flatpak.org/setup/) to make sure you have ``flatpak`` and ``flathub`` installed.
 
