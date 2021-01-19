@@ -9,13 +9,13 @@ parent: Contributing
 
 ## macOS Application Bundle
 
-To build a macOS app package, run the Github Actions workflow "Build macOS release". You can choose a repo branch and Borg version to use. The workflow will do the following:
+To build a macOS app package, run the [Github Actions workflow "Build macOS release"](https://github.com/borgbase/vorta/actions). You can choose a repo branch and Borg version to use. The workflow will do the following:
 
 1. Build an application bundle using PyInstaller
 2. Integrate Sparkle (for updates) and Borg (as fallback if Borg isn't installed)
 3. Provide the resulting app bundle as zipped artifact for downloading
 
-After downloading the app bundle, unzip it and open it via right-click > open to get around Gatekeeper.
+After downloading the app bundle, unzip it and open it with *right-click > open* to get around Gatekeeper.
 
 Once you are happy with the app, sign and package it as DMG locally using `make dist/Vorta.dmg`. For this step, XCode and `create-dmg` should be installed and those environment variables defined:
 
