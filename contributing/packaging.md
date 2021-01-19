@@ -7,6 +7,23 @@ parent: Contributing
 ---
 # Packaging Vorta
 
+## macOS Application Bundle
+
+To build a macOS app package, run the Github Actions workflow "Build macOS release". You can choose a repo branch and Borg version to use. The workflow will do the following:
+
+1. Build an application bundle using PyInstaller
+2. Integrate Sparkle (for updates) and Borg (as fallback if Borg isn't installed)
+3. Provide the resulting app bundle as zipped artifact for downloading
+
+After downloading the app bundle, unzip it and open it via right-click > open to get around Gatekeeper.
+
+Once you are happy with the app, sign and package it as DMG locally using `make dist/Vorta.dmg`. For this step, XCode and `create-dmg` should be installed and those environment variables defined:
+
+- CERTIFICATE_NAME="Developer ID Application: Joe Doe (XXXXXX)"
+- APPLE_ID_USER="name@example.com"
+- APPLE_ID_PASSWORD="@keychain:Notarization"
+
+
 ## Linux with Flatpak
 
 Follow the setup guide on [flatpak.org](http://flatpak.org/setup/) to make sure you have ``flatpak`` and ``flathub`` installed.
