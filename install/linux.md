@@ -3,7 +3,7 @@ title: Linux
 nav_order: 2
 layout: page
 description: ""
-parent: Download
+parent: Install
 ---
 # Install on Linux
 

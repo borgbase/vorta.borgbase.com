@@ -3,7 +3,7 @@ title: macOS
 nav_order: 1
 layout: page
 description: ""
-parent: Download
+parent: Install
 ---
 # Install on macOS
 

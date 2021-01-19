@@ -3,7 +3,7 @@ title: Windows
 nav_order: 3
 layout: page
 description: ""
-parent: Download
+parent: Install
 ---
 # Download for Windows
 
