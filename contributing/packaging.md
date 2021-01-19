@@ -7,7 +7,26 @@ parent: Contributing
 ---
 # Packaging Vorta
 
+## macOS Application Bundle
+
+To build a macOS app package, run the Github Actions workflow "Build macOS release". You can choose a repo branch and Borg version to use. The workflow will do the following:
+
+1. Build an application bundle using PyInstaller
+2. Integrate Sparkle (for updates) and Borg (as fallback if Borg isn't installed)
+3. Provide the resulting app bundle as zipped artifact for downloading
+
+After downloading the app bundle, unzip it and open it via right-click > open to get around Gatekeeper.
+
+Once you are happy with the app, sign and package it as DMG locally using `make dist/Vorta.dmg`
+
+
 ## Linux with Flatpak
+
+The recommended way to build Vorta on Linux is via Flatpak. This can be done by following these [instructions](https://wiki.gnome.org/Newcomers/BuildProject).
+
+They first guide you through the installation of the IDE GNOME Builder. GNOME Builder is then used to clone, build and run Vorta.
+
+### Installing Flatpak
 
 Follow the setup guide on [flatpak.org](http://flatpak.org/setup/) to make sure you have ``flatpak`` and ``flathub`` installed.
 
