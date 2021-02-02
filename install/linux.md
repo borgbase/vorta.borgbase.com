@@ -39,6 +39,17 @@ $ yay -S vorta
 Maintained by [@bjo81](https://github.com/bjo81).
 
 
+### RPM-based packages
+
+Can be used on for Fedora, EPEL (and friends), OpenSuse, Mageia and CentOS >= 7. For more details see the [custom repo](https://copr.fedorainfracloud.org/coprs/luminoso/vorta/).
+```
+$ sudo dnf copr enable luminoso/vorta
+$ sudo dnf install vorta
+```
+
+Maintained by [@luminoso](https://github.com/luminoso)
+
+
 ### Solus Linux
 Use the official [package](https://dev.getsol.us/source/vorta/). Command for install:
 ```
