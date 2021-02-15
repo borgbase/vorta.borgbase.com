@@ -7,6 +7,9 @@ parent: Contributing
 ---
 # Packaging Vorta
 
+If you are looking to package Vorta for a new platform or have issues with an existing package, join the [Packaging Discussion](https://github.com/borgbase/vorta/discussions/categories/packaging) on Github.
+
+
 ## macOS Application Bundle
 
 To build a macOS app package, run the [Github Actions workflow "Build macOS release"](https://github.com/borgbase/vorta/actions). You can choose a repo branch and Borg version to use. The workflow will do the following:

@@ -7,7 +7,7 @@ parent: Contributing
 ---
 # Translations
 
-Translations are managed on [Transifex](https://www.Transifex.com/borgbase/vorta/). If you are interested in adding a new language, first let us know in the [translation thread](https://github.com/borgbase/vorta/issues/159). We will then set you up on Transifex. No coding skill are required for translations.
+Translations are managed on [Transifex](https://www.Transifex.com/borgbase/vorta/). If you are interested in adding a new language, first let us know [here](https://github.com/borgbase/vorta/discussions/categories/translations). We will then set you up on Transifex. No coding skill are required for translations.
 
 
 ### Policy for Translations
