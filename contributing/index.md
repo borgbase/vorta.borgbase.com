@@ -15,6 +15,14 @@ Before actually coding a new feature it's usually best to discuss it with other 
 If your questions are Borg-specific it might be advisable to join the #borgbackup IRC channel on chat.freenode.net instead. Matrix is very suitable to be used as an always-on IRC-client, simply [register/identify to NickServ](https://github.com/matrix-org/matrix-appservice-irc/wiki/End-user-FAQ#how-do-i-registeridentify-to-nickserv) and then join the room `#freenode_#borgbackup:matrix.org`.
 
 
+## Testing the current development version
+
+If you have an issue with a current release, the issue may already be fixed in our Github repo. To test the latest code without doing much setup, you can install Vorta directly from Github:
+```
+$ pip install git+https://github.com/borgbase/vorta#egg=vorta
+```
+
+
 ## Local Development Setup
 
 Clone the latest version of this repo:
