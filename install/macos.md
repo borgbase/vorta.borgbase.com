@@ -12,7 +12,7 @@ The recommended installation method is via [Homebrew Cask](https://brew.sh/).
 If you plan to use Borg's mount feature to browse backups, you will need to install macFUSE and Borg's [own tap](https://github.com/borgbackup/homebrew-tap):
 
 ```
-$ brew install --cask osxfuse
+$ brew install --cask macfuse
 $ brew install borgbackup/tap/borgbackup-fuse
 ```
 
