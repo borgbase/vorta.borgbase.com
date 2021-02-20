@@ -4,6 +4,7 @@ nav_order: 4
 layout: page
 description: ""
 has_children: true
+has_toc: false
 ---
 # Contributing
 First off, thanks for taking the time to contribute!

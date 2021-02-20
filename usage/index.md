@@ -4,6 +4,7 @@ nav_order: 3
 layout: page
 description: ""
 has_children: true
+has_toc: false
 ---
 # Using Vorta
 
