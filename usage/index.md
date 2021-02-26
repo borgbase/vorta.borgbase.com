@@ -42,7 +42,7 @@ This will trigger a backup run in the current Vorta application.
 
 ## Restore
 
-Once something bad happens to your files, you will want to restore them from a backup. Even better is to test restoring before you actually need it. Vorta offers two ways of restoring: First you can *mount* and browse an archive to pick individual files. Or you can choose a folder and extract everthing in it. The latter option is great for bulk restoring. Read more about restoring [here](restore).
+Once something bad happens to your files, you will want to restore them from a backup. Even better is to test restoring before you actually need it. Vorta offers two ways of restoring: First you can *mount* and browse an archive to pick individual files. Or you can choose a folder and extract everything in it. The latter option is great for bulk restoring. Read more about restoring [here](restore).
 
 ## Pruning old backups
 
