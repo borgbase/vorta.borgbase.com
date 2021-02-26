@@ -30,6 +30,16 @@ Vorta has an integrated scheduler to perform automatic backups. After choosing a
 
 Since the Vorta application itself fires off our scheduled backups it **must be running** for that to occur. There is a check box on the *Misc* tab to enable Vorta to startup automatically when you log into your desktop.
 
+### Trigger backups externally
+
+If you prefer to start your backup jobs from system Cron or an external script (e.g. when a USB drive is plugged in), you can use the following command to start a backup run for a specific profile:
+
+```
+$ vorta --create 'Profile Name'
+```
+
+This will trigger a backup run in the current Vorta application.
+
 ## Restore
 
 Once something bad happens to your files, you will want to restore them from a backup. Even better is to test restoring before you actually need it. Vorta offers two ways of restoring: First you can *mount* and browse an archive to pick individual files. Or you can choose a folder and extract everthing in it. The latter option is great for bulk restoring. Read more about restoring [here](restore).
