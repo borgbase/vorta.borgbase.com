@@ -39,6 +39,27 @@ $ yay -S vorta
 Maintained by [@bjo81](https://github.com/bjo81).
 
 
+### Debian and derivatives
+Users of Debian ≥11 (Bullseye), its derivative Ubuntu ≥21.04
+(Hirsute), and its derivatives Pop!_OS, Mint, elementaryOS, Kubuntu,
+Neon, etc, may install Vorta from the App Store, or
+```
+sudo apt install vorta
+```
+Please note that some app stores provide both *deb* and *flatpak*
+packages.
+
+Users who require features from a newer version of Vorta, or users of
+older OS releases should investigate if their distribution provides
+*backports*, and should prefer Vorta from this distribution
+stream. eg:
+https://backports.debian.org
+https://help.ubuntu.com/community/UbuntuBackports
+
+Failing this, ask your distribution to provide a package, and failing
+that, use the flatpak!
+
+
 ### RPM-based packages
 
 Can be used on for Fedora, EPEL (and friends), OpenSuse, Mageia and CentOS >= 7. For more details see the [custom repo](https://copr.fedorainfracloud.org/coprs/luminoso/vorta/).
@@ -56,16 +77,6 @@ Use the official [package](https://dev.getsol.us/source/vorta/). Command for ins
 $ sudo eopkg it vorta
 ```
 Maintained by [@kyrios123](https://github.com/kyrios123).
-
-
-### Ubuntu Linux
-Use the official [PPA](https://launchpad.net/~samuel-w1/+archive/ubuntu/vorta/). Supports 20.04 and greater. Command for install:
-```
-$ sudo add-apt-repository ppa:samuel-w1/vorta
-$ sudo apt-get update
-$ sudo apt-get install vorta
-```
-Maintained by [@samuel-w](https://github.com/samuel-w).
 
 
 **Looking to maintain a package?** [Open](https://github.com/borgbase/vorta/issues/new) an issue or pull request and it will be added here.
