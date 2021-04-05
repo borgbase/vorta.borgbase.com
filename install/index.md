@@ -8,6 +8,7 @@ has_toc: false
 ---
 
 # Get Vorta
+
 Choose the operating system on which you plan to use Vorta below:
 
 <span class="fs-8">

@@ -6,9 +6,11 @@ description: ""
 has_children: true
 has_toc: false
 ---
+
 # Using Vorta
 
 ### Introduction
+
 Vorta is a cross-platform open source backup client. It makes managing Borg backups easy and there is no need to run commands in the Terminal.
 
 Vorta is also open source and everyone can contribute to improve the app or look at the source code. Together with Borg, which is also open source, this creates a strong chain of trust. By using Vorta, you can benefit from Borg's strengths and have the convenience of a graphical user interface at the same time.
@@ -26,9 +28,9 @@ A backup repository can be on the same machine, a removable USB drive or on a re
 
 ## Scheduling automatic backups
 
-Vorta has an integrated scheduler to perform automatic backups. After choosing a suitable interval in the *Schedule* tab, click the Apply button. To confirm it worked, inspect the *Next Backup* time to that Vorta has picked up your next backup time properly.
+Vorta has an integrated scheduler to perform automatic backups. After choosing a suitable interval in the _Schedule_ tab, click the Apply button. To confirm it worked, inspect the _Next Backup_ time to that Vorta has picked up your next backup time properly.
 
-Since the Vorta application itself fires off our scheduled backups it **must be running** for that to occur. There is a check box on the *Misc* tab to enable Vorta to startup automatically when you log into your desktop.
+Since the Vorta application itself fires off our scheduled backups it **must be running** for that to occur. There is a check box on the _Misc_ tab to enable Vorta to startup automatically when you log into your desktop.
 
 ### Trigger backups externally
 
@@ -42,7 +44,7 @@ This will trigger a backup run in the current Vorta application.
 
 ## Restore
 
-Once something bad happens to your files, you will want to restore them from a backup. Even better is to test restoring before you actually need it. Vorta offers two ways of restoring: First you can *mount* and browse an archive to pick individual files. Or you can choose a folder and extract everything in it. The latter option is great for bulk restoring. Read more about restoring [here](restore).
+Once something bad happens to your files, you will want to restore them from a backup. Even better is to test restoring before you actually need it. Vorta offers two ways of restoring: First you can _mount_ and browse an archive to pick individual files. Or you can choose a folder and extract everything in it. The latter option is great for bulk restoring. Read more about restoring [here](restore).
 
 ## Pruning old backups
 

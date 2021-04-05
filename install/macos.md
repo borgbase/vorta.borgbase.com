@@ -5,6 +5,7 @@ layout: page
 description: ""
 parent: Install
 ---
+
 # Install on macOS
 
 The recommended installation method is via [Homebrew Cask](https://brew.sh/).
@@ -22,12 +23,12 @@ $ brew install borgbackup/tap/borgbackup-fuse
 $ brew install borgbackup
 ```
 
-Then, as last step install Vorta 
+Then, as last step install Vorta
 
 ```
 $ brew install --cask vorta
 ```
 
 ## Binary Install
-If you don't use Homebrew, you can find [releases](https://github.com/borgbase/vorta/releases) on our Github page. This will usually work on the latest version of macOS only.
 
+If you don't use Homebrew, you can find [releases](https://github.com/borgbase/vorta/releases) on our Github page. This will usually work on the latest version of macOS only.
