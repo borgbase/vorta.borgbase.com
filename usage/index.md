@@ -15,7 +15,7 @@ Vorta is a cross-platform open source backup client. It makes managing Borg back
 
 Vorta is also open source and everyone can contribute to improve the app or look at the source code. Together with Borg, which is also open source, this creates a strong chain of trust. By using Vorta, you can benefit from Borg's strengths and have the convenience of a graphical user interface at the same time.
 
-If you are new to Vorta and Borg Backup, be sure to start with [this video](https://www.youtube.com/watch?v=asZX2YbTaNE) by Sun Knudsen. He gives a high level overview Borg's concepts and then walks through doing backups with Vorta step-by-step.
+If you are new to Vorta and Borg Backup, be sure to start with [this video](https://www.youtube.com/watch?v=asZX2YbTaNE) by Sun Knudsen or [this step-by-step tutorial](https://ostechnix.com/vorta-graphical-frontend-for-borgbackup/) by Karthick from OSTechNix. They both give a high level overview of Borg's concepts and then walk you through the actual setup process.
 
 ## Connecting to a backup repository
 
