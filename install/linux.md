@@ -62,7 +62,7 @@ Users who require features from a newer version of Vorta, or users of older OS r
 
 Failing this, ask your distribution to provide a package, and failing that, use the flatpak!
 
-Maintained by [@sten](https://salsa.debian.org/sten)
+Maintained by [@sten0](https://salsa.debian.org/python-team/packages/vorta)
 
 ### RPM-based packages
 
