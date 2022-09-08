@@ -64,9 +64,19 @@ Failing this, ask your distribution to provide a package, and failing that, use 
 
 Maintained by [@sten0](https://salsa.debian.org/python-team/packages/vorta)
 
-### RPM-based packages
+### Fedora
 
-Can be used on for Fedora, EPEL (and friends), OpenSuse, Mageia and CentOS >= 7. For more details see the [custom repo](https://copr.fedorainfracloud.org/coprs/luminoso/vorta/).
+Vorta is available via the official repository for Fedora >= 35. [package](https://src.fedoraproject.org/rpms/vorta)
+
+```
+$ sudo dnf install vorta
+```
+
+Maintained by [@Jonathan](https://src.fedoraproject.org/user/jonathanspw)
+
+### Other RPM-based Distributions
+
+Can be used on for EPEL (and friends), OpenSuse, Mageia and CentOS >= 7. For more details see the [custom repo](https://copr.fedorainfracloud.org/coprs/luminoso/vorta/).
 
 ```
 $ sudo dnf copr enable luminoso/vorta
