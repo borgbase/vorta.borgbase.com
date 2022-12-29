@@ -48,6 +48,7 @@ $ yay -S vorta
 
 Maintained by [@bjo81](https://github.com/bjo81).
 
+
 ### Debian and derivatives
 
 Users of Debian ≥11 (Bullseye), its derivative Ubuntu ≥21.04 (Hirsute), and its derivatives (Pop!\_OS, Mint, elementaryOS, Kubuntu, Neon, etc), may install Vorta from the App Store, or
@@ -64,17 +65,19 @@ Failing this, ask your distribution to provide a package, and failing that, use 
 
 Maintained by [@sten0](https://salsa.debian.org/python-team/packages/vorta)
 
-### Fedora
 
-Vorta is available via the official repository for Fedora >= 35. [package](https://src.fedoraproject.org/rpms/vorta)
+### Enterprise Linux and derivatives (RPM)
+
+Vorta is [available](https://src.fedoraproject.org/rpms/vorta) for any distribution using EPEL9 (Enterprise Linux 9 and derivatives, like Alma, Rocky, Fedora, RHEL and CentOS). First enable EPEL as described [here](https://docs.fedoraproject.org/en-US/epel/). Then install using `dnf`/`yum`:
 
 ```
-$ sudo dnf install vorta
+$ yum install vorta
 ```
 
 Maintained by [@Jonathan](https://src.fedoraproject.org/user/jonathanspw)
 
-### Other RPM-based Distributions
+
+### Fedora COPR (unofficial)
 
 Can be used on for EPEL (and friends), OpenSuse, Mageia and CentOS >= 7. For more details see the [custom repo](https://copr.fedorainfracloud.org/coprs/luminoso/vorta/).
 
@@ -84,6 +87,7 @@ $ sudo dnf install vorta
 ```
 
 Maintained by [@luminoso](https://github.com/luminoso)
+
 
 ### Solus Linux
 
