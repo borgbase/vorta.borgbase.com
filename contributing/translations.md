@@ -12,7 +12,7 @@ Translations are managed on [Transifex](https://www.Transifex.com/borgbase/vorta
 
 ### Policy for Translations
 
-- No google translate or other automated translation.
+- No Google/AI or other automated translations.
 - Only native or as-good-as-native speakers should translate.
 - As there is a need for continued maintenance, a translator should be also a user of vorta, having some own interest in the translation (one-time translations are not that helpful if there is no one updating them regularly)
 - A translation must have >90% translated strings. If a translation falls and stays below that for a longer time, it will not be used by vorta and ultimately, it will get removed from the repository also.
@@ -73,9 +73,9 @@ To successfully run the translation-related Makefile targets, the translations m
 - `make` tool
 - `pylupdate5` (from PyQt)
 - `lrelease` (from Qt package)
-- `tx` Transifex client (PyPI package `transifex-client`, contained in requirements.d/dev.txt)
+- `tx` Transifex client (from [Github](https://github.com/transifex/cli), it will ask you for a API token when first running it)
 
-Install on Debian 9 "Stretch":
+Install on Debian:
 
 ```
 $ apt install qttools5-dev-tools pyqt5-dev-tools
