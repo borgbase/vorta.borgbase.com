@@ -110,7 +110,7 @@ pre-commit run
 
 ## Working on the GUI
 
-Qt Creator or Qt Designer is used to edit views. There are many ways to install one of these two applications. For MacOS you can use homebrew or install from [their site](https://www.qt.io/download). Then you can open the .ui files in `vorta/assets/UI` with Qt Creator.
+Qt Creator or Qt Designer is used to edit views. There are many ways to install one of these two applications. For MacOS you can use homebrew or install from [their site](https://www.qt.io/download). Then you can open the .ui files in `vorta/assets/UI` with Qt Creator. To learn about PyQt we recommend the following [tutorial](https://www.pythonguis.com/pyqt5-tutorial/).
 
 ```
 brew cask install qt-creator
