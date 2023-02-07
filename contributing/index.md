@@ -60,6 +60,8 @@ $ brew cask install qt-creator
 $ brew install qt
 ```
 
+To learn about PyQt we recommend the following tutorial: https://www.pythonguis.com/pyqt5-tutorial/.
+
 ## Icons
 
 For UI icons, we use Fontawesome. You can browse available icons [here](https://fontawesome.com/icons) and download them as SVG [here](https://github.com/encharm/Font-Awesome-SVG-PNG). New icons are first added to src/vorta/assets/icons, and can be gotten with the `get_colored_icon` function
