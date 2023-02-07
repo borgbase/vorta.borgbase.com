@@ -22,7 +22,7 @@ If your questions are Borg-specific it might be advisable to join the #borgbacku
 If you have an issue with a current release, the issue may already be fixed in our Github repo. To test the latest code without doing much setup, you can install Vorta directly from Github:
 
 ```
-$ pip install git+https://github.com/borgbase/vorta#egg=vorta
+pip install git+https://github.com/borgbase/vorta#egg=vorta
 ```
 
 ## Local Development Setup
@@ -30,37 +30,102 @@ $ pip install git+https://github.com/borgbase/vorta#egg=vorta
 Clone the latest version of this repo:
 
 ```
-$ git clone https://github.com/borgbase/vorta/
+git clone https://github.com/borgbase/vorta/
+```
+
+Create a virtual python environment for development. This sandboxes your development packages.
+
+```
+python3 -m venv  --prompt vorta --upgrade-deps env
+```
+
+Activate the virtual environment. For bash type:
+
+```
+./env/bin/activate
 ```
 
 Install in development/editable mode while in the repo root:
 
 ```
-$ pip install -e .
+pip install -e .
 ```
 
-Install additional developer packages (pytest, tox, pyinstaller):
+Install additional developer packages (pytest, tox, pyinstaller, pre-commit):
 
 ```
 pip install -r requirements.d/dev.txt
 ```
 
+We use [pre-commit](https://pre-commit.com/) to ensure commit consistancy. Install the pre-commit hooks to your local copy of the repository:
+
+```
+pre-commit install
+```
+
 Then run as Python script. Any changes from your source folder should be reflected.
 
 ```
-$ vorta
+vorta
 ```
+
+You can deactivate the virtual environment again using:
+
+```
+deactivate
+```
+
+## Manually run pre-commit checks
+
+These checks include code formatter, linters and other code style checkers. The following command runs these checks for the modified files only.
+
+```
+pre-commit run
+```
+
+## Coding Conventions
+
+- All files should be formatted using the [black](https://github.com/psf/black) auto-formatter. Black is already configured as a pre-commit hook.
+
+- Use an editor with [EditorConfig](https://editorconfig.org/) support. The `.editorconfig` file in the repository defines style rules e.g. for indentation that must be followed.
+
+- Follow [PEP8](https://peps.python.org/pep-0008/) with some exceptions like the maximum line length. Use flake8 to check your code. This tool is also automatically run by pre-commit.
+
+- Sort your imports with [isort](https://pycqa.github.io/isort/). Pre-commit does that too.
+
+- Write docstrings at least for methods and functions. Docstrings for classes, attributes and global variables are very welcome too. Use either [numpydoc ](https://numpydoc.readthedocs.io/en/latest/format.html) / [reST](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html)/ [google ](https://github.com/google/styleguide/blob/gh-pages/pyguide.md#38-comments-and-docstrings) style for your docstrings. We haven't decided on one docstring format yet.
+
+- Use python type hints as applicable. Method and function signatures must be typed!
+
+- Mark all strings for internationalization. See the [18n guide](#Internationalization).
+
+- Use comments to explain your code and your implementation decisions.
+
+- Use underscore naming convention (not camelCase).
+
+- Avoid redundancy that is repeating code.
+
+- Do not copy code from other people or projects! If you contribute code you must hold the right to distribute it under the terms of GPLv3 and coher to the [Developer Certificate of Origin](https://developercertificate.org/). If you want to use code from other people with a license compatible to GPLv3 talk to us first.
+
 
 ## Working on the GUI
 
-Qt Creator is used to edit views. Install from [their site](https://www.qt.io/download) or using Homebrew and then open the .ui files in `vorta/assets/UI` with Qt Creator:
+Qt Creator or Qt Designer is used to edit views. There are many ways to install one of these two applications. For MacOS you can use homebrew or install from [their site](https://www.qt.io/download). Then you can open the .ui files in `vorta/assets/UI` with Qt Creator. To learn about PyQt we recommend the following [tutorial](https://www.pythonguis.com/pyqt5-tutorial/).
 
 ```
-$ brew cask install qt-creator
-$ brew install qt
+brew cask install qt-creator
+brew install qt
 ```
 
-To learn about PyQt we recommend the following tutorial: https://www.pythonguis.com/pyqt5-tutorial/.
+## Internationalization
+
+Vorta supports multiple languages. The UI strings in our source code must be written in English. However vorta ships with translations of these strings. When writing code you must mark the user facing strings (that are part of the user interface). Do not mark strings that aren't. Marking is done by wrapping the strings in the `translate` or `trans_late` method which are defined in `vorta.i18n`. Both methods share the same signature:
+
+```py
+translate(context: str, sourceText: str, disambiguation: str = None, n: int = -1) -> str
+```
+
+The arguments are explained in the [QT docs](https://doc.qt.io/qt-6/qcoreapplication.html#translate). Usually you will use `translate` that not only marks the string for translation but also translates it when the application is run. However sometimes you want to mark a string, use the english version and translate it later. In these cases you have to use `trans_late` and call `translate` on the string later.
 
 ## Icons
 
@@ -71,11 +136,5 @@ For UI icons, we use Fontawesome. You can browse available icons [here](https://
 Tests are in the folder `/tests`. Testing happens at the level of UI components. Calls to `borg` are mocked and can be replaced with some example json-output. To run tests:
 
 ```
-$ pytest
-```
-
-To test for style errors:
-
-```
-$ flake8
+pytest
 ```
