@@ -42,7 +42,7 @@ python3 -m venv  --prompt vorta --upgrade-deps env
 Activate the virtual environment. For bash type:
 
 ```
-./env/bin/activate
+source ./env/bin/activate
 ```
 
 Install in development/editable mode while in the repo root:
