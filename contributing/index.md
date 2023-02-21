@@ -139,7 +139,7 @@ Tests are in the folder `/tests`. Testing happens at the level of UI components.
 pytest
 ```
 
-## Creating Commits, opening PRs and licensing
+## Creating Commits, Opening PRs and Licensing
 
 By opening a pull/merge request you provide your contribution under the [license](./../../LICENSE.txt) of this repository and you affirm the [Developer Certificate of Origin][dco]. You can show that by signing off your commits (using `git commit -s`).
 
