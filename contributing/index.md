@@ -119,13 +119,13 @@ brew install qt
 
 ## Internationalization
 
-Vorta supports multiple languages. The UI strings in our source code must be written in English. However vorta ships with translations of these strings. When writing code you must mark the user facing strings (that are part of the user interface). Do not mark strings that aren't. Marking is done by wrapping the strings in the `translate` or `trans_late` method which are defined in `vorta.i18n`. Both methods share the same signature:
+Vorta supports multiple languages. The UI strings in our source code must be written in English. However vorta ships with translations of these strings to multiple languages. The ui strings are later extracted automatically from the code into a `.qs` file. For that to work you must mark the user facing strings when writing code. Do not mark strings that aren't part of the user interface. Marking is done by wrapping the strings in the `translate` or `trans_late` method which are defined in `vorta.i18n`. Both methods share the same signature:
 
 ```py
 translate(context: str, sourceText: str, disambiguation: str = None, n: int = -1) -> str
 ```
 
-The arguments are explained in the [QT docs](https://doc.qt.io/qt-6/qcoreapplication.html#translate). Usually you will use `translate` that not only marks the string for translation but also translates it when the application is run. However sometimes you want to mark a string, use the english version and translate it later. In these cases you have to use `trans_late` and call `translate` on the string later.
+The arguments are explained in the [QT docs](https://doc.qt.io/qt-6/qcoreapplication.html#translate). Usually you will use `translate` that not only marks the string for translation but also translates it at runtime. However sometimes you want to mark a string, use the english version in a data structure, an algorithm of some sort or other calculations. In these cases you have to use `trans_late` and call `translate` on the string later before it is displayed. You can find more information on the translation process in the [Translations guide](translations). For general information on internationization in PyQt see the PyQt docs](https://www.riverbankcomputing.com/static/Docs/PyQt5/i18n.html#differences-between-pyqt5-and-qt).
 
 ## Icons
 
