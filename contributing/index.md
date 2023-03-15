@@ -35,6 +35,12 @@ Clone the latest version of this repo:
 git clone https://github.com/borgbase/vorta/
 ```
 
+Move to the created repo directory:
+
+```
+cd vorta
+```
+
 Create a virtual python environment for development. This sandboxes your development packages.
 
 ```
@@ -76,6 +82,9 @@ You can deactivate the virtual environment again using:
 ```
 deactivate
 ```
+
+_Note: Don't forget to activate your virtual environment every time you wish to work on `vorta`._
+
 
 ## Manually run pre-commit checks
 
