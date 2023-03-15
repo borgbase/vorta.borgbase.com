@@ -15,7 +15,7 @@ All contributions that improve Vorta for everyone are welcome. This includes bug
 
 Before actually coding a new feature it's usually best to discuss it with other users and maintainers on [GitHub Discussions](https://github.com/borgbase/vorta/discussions).
 
-If your questions are Borg-specific it might be advisable to join the #borgbackup IRC channel on chat.freenode.net instead. Matrix is very suitable to be used as an always-on IRC-client, simply [register/identify to NickServ](https://github.com/matrix-org/matrix-appservice-irc/wiki/End-user-FAQ#how-do-i-registeridentify-to-nickserv) and then join the room `#freenode_#borgbackup:matrix.org`.
+If your questions are Borg-specific it might be advisable to join the #borgbackup IRC channel on libera.chat instead. Matrix is very suitable to be used as an always-on IRC-client, simply [register/identify to NickServ](https://libera.chat/guides/faq#can-i-connect-with-matrix) and then join the room `#borgbackup:libera.chat`.
 
 ## Testing the current development version
 
