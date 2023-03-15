@@ -22,7 +22,6 @@ Settings can be transferred by copying `~/.local/share/Vorta/settings.db` to `~/
 
 Maintained by [@Hofer-Julian](https://github.com/Hofer-Julian).
 
-
 ## Install from Source
 
 The most generic way is to install it as Python package using [PIP](https://pip.readthedocs.io/en/stable/installing/). First [install](https://borgbackup.readthedocs.io/en/stable/installation.html) Borg using the package of your distribution or via PyPI. The latter needs some additional [source packages](https://borgbackup.readthedocs.io/en/stable/installation.html#dependencies). Then install Vorta from PyPI. Your local Python version must be >= 3.7. If you keep Python packages in your home folder, you can add the `--user` option.
@@ -35,7 +34,6 @@ $ pip3 install vorta
 
 You can add a `.desktop` entry to get a link to Vorta in your application launcher, usually `~/.local/share/applications/vorta.desktop`. Use the template available [here](https://github.com/borgbase/vorta/blob/master/src/vorta/assets/metadata/com.borgbase.Vorta.desktop) and adjust the `Exec` and [`Icon`](https://github.com/borgbase/vorta/blob/master/src/vorta/assets/icons/scalable/com.borgbase.Vorta.svg) paths if necessary.
 
-
 ## Distribution Packages
 
 ### Arch Linux
@@ -47,7 +45,6 @@ $ yay -S vorta
 ```
 
 Maintained by [@bjo81](https://github.com/bjo81).
-
 
 ### Debian and derivatives
 
@@ -65,7 +62,6 @@ Failing this, ask your distribution to provide a package, and failing that, use 
 
 Maintained by [@sten0](https://salsa.debian.org/python-team/packages/vorta)
 
-
 ### Enterprise Linux and derivatives (RPM)
 
 Vorta is [available](https://src.fedoraproject.org/rpms/vorta) for any distribution using EPEL9 (Enterprise Linux 9 and derivatives, like Alma, Rocky, Fedora, RHEL and CentOS). First enable EPEL as described [here](https://docs.fedoraproject.org/en-US/epel/). Then install using `dnf`/`yum`:
@@ -75,7 +71,6 @@ $ yum install vorta
 ```
 
 Maintained by [@Jonathan](https://src.fedoraproject.org/user/jonathanspw)
-
 
 ### Fedora COPR (unofficial)
 
@@ -87,7 +82,6 @@ $ sudo dnf install vorta
 ```
 
 Maintained by [@luminoso](https://github.com/luminoso)
-
 
 ### Solus Linux
 
