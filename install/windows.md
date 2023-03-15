@@ -79,7 +79,7 @@ $ vorta
 
 ## Possible Errors
 
-- If you get error, `ImportError: libQt5Core.so.5 : cannot open shared object file: No such file or directory`, run
+- If you get an error, `ImportError: libQt5Core.so.5 : cannot open shared object file: No such file or directory`, run
 
   ```
   $ sudo strip --remove-section=.note.ABI-tag /usr/lib/x86_64-linux-gnu/libQt5Core.so.5
