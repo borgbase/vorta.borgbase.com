@@ -27,6 +27,8 @@ pip install git+https://github.com/borgbase/vorta#egg=vorta
 
 ## Local Development Setup
 
+Note: Installation of PyQt5 via pip is currently incompatible with M1/M2 Macs. To get it working on M1/M2 Macs, run the necessary commands in a terminal window opened with Rosetta.
+
 Clone the latest version of this repo:
 
 ```
@@ -36,7 +38,7 @@ git clone https://github.com/borgbase/vorta/
 Create a virtual python environment for development. This sandboxes your development packages.
 
 ```
-python3 -m venv  --prompt vorta --upgrade-deps env
+python3 -m venv --prompt vorta --upgrade-deps env
 ```
 
 Activate the virtual environment. For bash type:
@@ -107,7 +109,6 @@ pre-commit run
 
 - Do not copy code from other people or projects! If you contribute code you must hold the right to distribute it under the terms of GPLv3 and coher to the [Developer Certificate of Origin](https://developercertificate.org/). If you want to use code from other people with a license compatible to GPLv3 talk to us first.
 
-
 ## Working on the GUI
 
 Qt Creator or Qt Designer is used to edit views. There are many ways to install one of these two applications. For MacOS you can use homebrew or install from [their site](https://www.qt.io/download). Then you can open the .ui files in `vorta/assets/UI` with Qt Creator. To learn about PyQt we recommend the following [tutorial](https://www.pythonguis.com/pyqt5-tutorial/).
@@ -125,7 +126,7 @@ Vorta supports multiple languages. The UI strings in our source code must be wri
 translate(context: str, sourceText: str, disambiguation: str = None, n: int = -1) -> str
 ```
 
-The arguments are explained in the [QT docs](https://doc.qt.io/qt-6/qcoreapplication.html#translate). Usually you will use `translate` that not only marks the string for translation but also translates it at runtime. However sometimes you want to mark a string, use the english version in a data structure, an algorithm of some sort or other calculations. In these cases you have to use `trans_late` and call `translate` on the string later before it is displayed. You can find more information on the translation process in the [Translations guide](translations). For general information on internationization in PyQt see the PyQt docs](https://www.riverbankcomputing.com/static/Docs/PyQt5/i18n.html#differences-between-pyqt5-and-qt).
+The arguments are explained in the [QT docs](https://doc.qt.io/qt-6/qcoreapplication.html#translate). Usually you will use `translate` that not only marks the string for translation but also translates it at runtime. However sometimes you want to mark a string, use the english version in a data structure, an algorithm of some sort or other calculations. In these cases you have to use `trans_late` and call `translate` on the string later before it is displayed. You can find more information on the translation process in the [Translations guide](translations). For general information on internationalization in PyQt see the [PyQt docs](https://www.riverbankcomputing.com/static/Docs/PyQt5/i18n.html#differences-between-pyqt5-and-qt).
 
 ## Icons
 
