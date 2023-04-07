@@ -72,16 +72,6 @@ $ yum install vorta
 
 Maintained by [@Jonathan](https://src.fedoraproject.org/user/jonathanspw)
 
-### Fedora COPR (unofficial)
-
-Can be used on for EPEL (and friends), OpenSuse, Mageia and CentOS >= 7. For more details see the [custom repo](https://copr.fedorainfracloud.org/coprs/luminoso/vorta/).
-
-```
-$ sudo dnf copr enable luminoso/vorta
-$ sudo dnf install vorta
-```
-
-Maintained by [@luminoso](https://github.com/luminoso)
 
 ### Solus Linux
 
