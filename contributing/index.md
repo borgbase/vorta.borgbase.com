@@ -77,6 +77,16 @@ Then run as Python script. Any changes from your source folder should be reflect
 vorta
 ```
 
+_Note: If you run into errors with the Qt platform while running this command or when running `pytest`, try installing the following dependencies:_
+
+```
+        sudo apt update && sudo apt install -y \
+          xvfb libssl-dev openssl libacl1-dev libacl1 build-essential borgbackup \
+          libxkbcommon-x11-0 dbus-x11 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 \
+          libxcb-randr0 libxcb-render-util0 libxcb-xinerama0 libxcb-xfixes0 libxcb-shape0 \
+          libegl1 libxcb-cursor0
+```
+
 You can deactivate the virtual environment again using:
 
 ```
