@@ -77,7 +77,7 @@ Then run as Python script. Any changes from your source folder should be reflect
 vorta
 ```
 
-_Note: If you run into errors with the Qt platform while running this command or when running `pytest`, try installing the following dependencies:_
+Note: If you run into errors with the Qt platform while running this command or when running `pytest`, try installing the following dependencies:
 
 ```
         sudo apt update && sudo apt install -y \
@@ -86,6 +86,8 @@ _Note: If you run into errors with the Qt platform while running this command or
           libxcb-randr0 libxcb-render-util0 libxcb-xinerama0 libxcb-xfixes0 libxcb-shape0 \
           libegl1 libxcb-cursor0
 ```
+
+These are the dependencies used in Github Actions. If the command above still doesn't work, check the [here](https://github.com/borgbase/vorta/blob/master/.github/workflows/test.yml#L65) for an updated dependency list and try installing those.
 
 You can deactivate the virtual environment again using:
 
