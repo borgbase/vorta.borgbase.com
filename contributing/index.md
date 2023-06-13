@@ -151,7 +151,16 @@ The arguments are explained in the [QT docs](https://doc.qt.io/qt-6/qcoreapplica
 
 ## Icons
 
-For UI icons, we use Fontawesome. You can browse available icons [here](https://fontawesome.com/icons) and download them as SVG [here](https://github.com/encharm/Font-Awesome-SVG-PNG). New icons are first added to src/vorta/assets/icons, and can be gotten with the `get_colored_icon` function
+When adding UI icons, please make sure they are under a permissive license, like *MIT* or *Apache*. Most of our icons are from [Fork Awesome](https://forkaweso.me/Fork-Awesome/icons/) which was forked from *Font Awesome* before their license became less permissive.
+
+You can also search for icons with a suitable license using [Iconduck](https://iconduck.com/) and then add a comment specifying the author and license in the SVG file. E.g.:
+
+```
+<!-- Material Design icons by Google (Apache License 2.0) -->
+```
+
+New icons are first added to src/vorta/assets/icons, and can be used with the `get_colored_icon` function. To ensure they can be colored for dark and light themes, add `fill="#000000"` as attribute in the root `<svg>` element.
+
 
 ## Testing
 
