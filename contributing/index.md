@@ -151,13 +151,9 @@ The arguments are explained in the [QT docs](https://doc.qt.io/qt-6/qcoreapplica
 
 ## Icons
 
-When adding UI icons, please make sure they are under a permissive license, like *MIT* or *Apache*. Most of our icons are from [Fork Awesome](https://forkaweso.me/Fork-Awesome/icons/) which was forked from *Font Awesome* before their license became less permissive.
+When adding UI icons, try to use existing icon sets, since we already include the license and attribution for those. Most of our icons are from [Fork Awesome](https://forkaweso.me/Fork-Awesome/icons/) which was forked from *Font Awesome* before their license became less permissive.
 
-You can also search for icons with a suitable license using [Iconduck](https://iconduck.com/) and then add a comment specifying the author and license in the SVG file. E.g.:
-
-```
-<!-- Material Design icons by Google (Apache License 2.0) -->
-```
+In addition we include several [Google Material Icons](https://fonts.google.com/icons).
 
 New icons are first added to src/vorta/assets/icons, and can be used with the `get_colored_icon` function. To ensure they can be colored for dark and light themes, add `fill="#000000"` as attribute in the root `<svg>` element.
 
