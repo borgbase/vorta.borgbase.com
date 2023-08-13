@@ -130,6 +130,9 @@ pre-commit run
 
 - Do not copy code from other people or projects! If you contribute code you must hold the right to distribute it under the terms of GPLv3 and coher to the [Developer Certificate of Origin](https://developercertificate.org/). If you want to use code from other people with a license compatible to GPLv3 talk to us first.
 
+- Follow [PEP 440](https://peps.python.org/pep-0440/) for versioning, including semantic versioning. In a nutshell this means we use `Major.Minor.Patch` (e.g. `0.9.5`) for stable releases and `0.9.0beta1` for [pre-releases](https://peps.python.org/pep-0440/#pre-release-spelling).
+
+
 ## Working on the GUI
 
 Qt Creator or Qt Designer is used to edit views. There are many ways to install one of these two applications. For MacOS you can use homebrew or install from [their site](https://www.qt.io/download). Then you can open the .ui files in `vorta/assets/UI` with Qt Creator. To learn about PyQt we recommend the following [tutorial](https://www.pythonguis.com/pyqt5-tutorial/).
