@@ -97,6 +97,19 @@ deactivate
 
 _Note: Don't forget to activate your virtual environment every time you wish to work on `vorta`._
 
+### To make Local Development Setup quicker
+
+You can just run the `build.sh` file in the root of the repository. This will create a virtual environment, install the dependencies, developer packages and pre-commit.
+
+```
+./build.sh
+```
+
+_Note: In case the build.sh do not executes. You will need to make it executable._
+
+```
+chmod +x build.sh
+```
 
 ## Manually run pre-commit checks
 
