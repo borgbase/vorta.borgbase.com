@@ -123,3 +123,18 @@ $base-button-color: #f7f7f7;
 //   lg: 800px,
 //   xl: 1316px
 // );
+
+figcaption {
+    font-size: small;
+    text-align: right;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}

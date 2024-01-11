@@ -16,7 +16,8 @@ Vorta is a backup client for macOS and Linux desktops. It integrates the mighty 
 
 [Install](install){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Use](/usage){: .btn .fs-5 .mb-4 .mb-md-0 .mr-2 } [Get Involved](contributing){: .btn .fs-5 .mb-4 .mb-md-0 }
 
-![](https://files.qmax.us/vorta-screencast-6.gif)
+<video controls preload="none" src="/assets/images/vorta/vorta-0.9-1080.mp4" poster="/assets/images/vorta/vorta-0.9-preview.webp">
+</video>
 
 ---
 
