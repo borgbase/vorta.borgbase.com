@@ -38,7 +38,7 @@ You can add a `.desktop` entry to get a link to Vorta in your application launch
 
 ### Arch Linux
 
-Use the [AUR package](https://aur.archlinux.org/packages/vorta/).
+Use the [AUR package](https://archlinux.org/packages/extra/any/vorta/).
 
 ```
 $ yay -S vorta
