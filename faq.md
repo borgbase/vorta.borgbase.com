@@ -23,6 +23,7 @@ Yes. You can find your settings in:
 
 - `~/.var/app/com.borgbase.Vorta/data/Vorta/settings.db` if you use flatpak
 - `~/.local/share/Vorta/settings.db` if you use pip
+- `~/Library/Application Support/Vorta` if you use MacOS
 
 Copy that file to the same location on the new installtion.
 
