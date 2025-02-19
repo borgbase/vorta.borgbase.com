@@ -13,7 +13,9 @@ First off, thanks for taking the time to contribute!
 
 All contributions that improve Vorta for everyone are welcome. This includes bug fixes, new features, translations, answering questions or improving documentation.
 
-Before actually coding a new feature it's usually best to discuss it with other users and maintainers on [GitHub Discussions](https://github.com/borgbase/vorta/discussions).
+Before actually coding a new feature or addressing an issue it's usually best to discuss it with other users and maintainers on [GitHub Discussions](https://github.com/borgbase/vorta/discussions).
+
+When contributing additional code, please indicate if you will be available to maintain the feature in the future. If not, it will be more likely for the contribution to be rejected, since the maintenance work needs to be done by others. If the additional code only solves a minor issue, the added maintenance burden may not be viable. See also [this article](https://www.construct.net/en/blogs/ashleys-blog-2/reality-long-term-software-1892) for more background on long-term maintenance of software projects.
 
 If your questions are Borg-specific it might be advisable to join the #borgbackup IRC channel on libera.chat instead. Matrix is very suitable to be used as an always-on IRC-client, simply [register/identify to NickServ](https://libera.chat/guides/faq#can-i-connect-with-matrix) and then join the room `#borgbackup:libera.chat`.
 
