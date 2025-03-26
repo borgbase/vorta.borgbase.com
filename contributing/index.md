@@ -29,8 +29,6 @@ pip install git+https://github.com/borgbase/vorta#egg=vorta
 
 ## Local Development Setup
 
-Note: Installation of PyQt5 via pip is currently incompatible with M1/M2 Macs. To get it working on M1/M2 Macs, run the necessary commands in a terminal window opened with Rosetta.
-
 Clone the latest version of this repo:
 
 ```
