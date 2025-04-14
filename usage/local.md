@@ -22,13 +22,15 @@ After starting Vorta, you should see a new settings window.
 
 ## Step 2 - Setting up Local Repository
 
-Click on the **Repository** drop down menu, and select **Initialize New Repository**. After clicking, a new window should pop up.
+Click on the **Add Repository** drop-down menu, and select **"New Repository…"**. After clicking, a new window should pop up.
 
-<img src="/assets/images/vorta/local2.png" alt="" width="400" />
+<img src="/assets/images/vorta/local-add-new-repo.png" alt="" width="400" />
 
-Click on the <img src="/assets/images/vorta/local3.png" /> icon to select the directory where you would like your new Borg repository to be initialized. Enter in your chosen passphrase for the repository. **Make sure and store your passphrase somewhere safe!** When you are sure all of the information you have entered in is correct, hit **Add**.
+Click on the <img src="/assets/images/vorta/local-folder-icon.png" /> icon to select the directory where you would like your new Borg repository to be initialized. Enter in your chosen passphrase for the repository. **Make sure and store your passphrase somewhere safe!** When you are sure all of the information you have entered in is correct, hit **Add**.
 
-<img src="/assets/images/vorta/local4.png" alt="" width="400" />
+You can also add an existing repository by clicking on the **Add Repository** drop-down menu, and selecting **"Existing Repository…"**. After clicking, a new window should pop up.
+
+<img src="/assets/images/vorta/local-add-existing-repo.png" alt="" width="400" />
 
 ## Step 3 – Add folders to back up
 
