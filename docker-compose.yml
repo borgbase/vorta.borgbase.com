@@ -1,0 +1,22 @@
+services:
+  develop:
+    container_name: vorta-docs-dev
+    image: vorta-docs:latest
+    build: .
+    ports:
+      - "4000:4000"
+      - "35729:35729"  # LiveReload port
+    volumes:
+      - .:/app:Z
+    environment:
+      - SASS_SILENCE_DEPRECATIONS=true
+    command: bundle exec jekyll serve --host 0.0.0.0 --livereload --incremental
+
+  build:
+    container_name: vorta-docs-build
+    image: vorta-docs:latest
+    volumes:
+      - .:/app:Z
+    environment:
+      - JEKYLL_ENV=production
+    command: bundle exec jekyll build
