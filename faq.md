@@ -31,9 +31,7 @@ We are working on a way to do this via the GUI -- check [this GitHub issue](http
 
 ### My file/folder dialog looks different than other Linux programs.
 
-<img src="/assets/images/vorta/qt_default_dialog.png" alt="" width="300" height="188" />
-
-If your file/folder dialog looks like the picture above then you need to install [qt5-styleplugins](https://repology.org/project/qt5-styleplugins/versions), and set `QT_STYLE_OVERRIDE` to `gtk2`. See [the Arch wiki](https://wiki.archlinux.org/index.php/Uniform_look_for_Qt_and_GTK_applications) for more
+If your file/folder dialog looks different compared to other linux programs then you need to install [qt5-styleplugins](https://repology.org/project/qt5-styleplugins/versions), and set `QT_STYLE_OVERRIDE` to `gtk2`. See [the Arch wiki](https://wiki.archlinux.org/index.php/Uniform_look_for_Qt_and_GTK_applications) for more
 
 ### Something doesn't work. Where can I get help?
 
