@@ -24,10 +24,16 @@ If your questions are Borg-specific it might be advisable to join the #borgbacku
 If you have an issue with a current release, the issue may already be fixed in our Github repo. To test the latest code without doing much setup, you can install Vorta directly from Github:
 
 ```
-pip install git+https://github.com/borgbase/vorta#egg=vorta
+uvx --from git+https://github.com/borgbase/vorta vorta
 ```
 
 ## Local Development Setup
+
+First, install [uv](https://docs.astral.sh/uv/) if you haven't already:
+
+```
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
 
 Clone the latest version of this repo:
 
@@ -35,86 +41,47 @@ Clone the latest version of this repo:
 git clone https://github.com/borgbase/vorta/
 ```
 
-Move to the created repo directory:
+Move to the repo directory and sync dependencies:
 
 ```
 cd vorta
+uv sync
 ```
 
-Create a virtual python environment for development. This sandboxes your development packages.
+This creates a virtual environment and installs all dependencies including dev tools (pytest, pre-commit, etc.).
+
+We use [pre-commit](https://pre-commit.com/) to ensure commit consistency. To run all checks manually:
 
 ```
-python3 -m venv --prompt vorta --upgrade-deps env
+uv run pre-commit run --all-files --show-diff-on-failure
 ```
 
-Activate the virtual environment. For bash type:
+Run Vorta:
 
 ```
-source ./env/bin/activate
+uv run vorta
 ```
 
-Install in development/editable mode while in the repo root:
+Note: If you run into errors with the Qt platform while running this command or when running `uv run pytest`, try installing the following dependencies:
 
 ```
-pip install -e .
+sudo apt update && sudo apt install -y \
+  xvfb libssl-dev openssl libacl1-dev libacl1 build-essential borgbackup \
+  libxkbcommon-x11-0 dbus-x11 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 \
+  libxcb-randr0 libxcb-render-util0 libxcb-xinerama0 libxcb-xfixes0 libxcb-shape0 \
+  libegl1 libxcb-cursor0
 ```
 
-Install additional developer packages (pytest, tox, pyinstaller, pre-commit):
+These are the dependencies used in Github Actions. If the command above still doesn't work, check [here](https://github.com/borgbase/vorta/blob/master/.github/workflows/test.yml#L65) for an updated dependency list and try installing those.
 
-```
-pip install -r requirements.d/dev.txt
-```
-
-We use [pre-commit](https://pre-commit.com/) to ensure commit consistancy. Install the pre-commit hooks to your local copy of the repository:
-
-```
-pre-commit install
-```
-
-Then run as Python script. Any changes from your source folder should be reflected.
-
-```
-vorta
-```
-
-Note: If you run into errors with the Qt platform while running this command or when running `pytest`, try installing the following dependencies:
-
-```
-        sudo apt update && sudo apt install -y \
-          xvfb libssl-dev openssl libacl1-dev libacl1 build-essential borgbackup \
-          libxkbcommon-x11-0 dbus-x11 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 \
-          libxcb-randr0 libxcb-render-util0 libxcb-xinerama0 libxcb-xfixes0 libxcb-shape0 \
-          libegl1 libxcb-cursor0
-```
-
-These are the dependencies used in Github Actions. If the command above still doesn't work, check the [here](https://github.com/borgbase/vorta/blob/master/.github/workflows/test.yml#L65) for an updated dependency list and try installing those.
-
-You can deactivate the virtual environment again using:
-
-```
-deactivate
-```
-
-_Note: Don't forget to activate your virtual environment every time you wish to work on `vorta`._
-
-
-## Manually run pre-commit checks
-
-These checks include code formatter, linters and other code style checkers. The following command runs these checks for the modified files only.
-
-```
-pre-commit run
-```
 
 ## Coding Conventions
 
-- All files should be formatted using the [black](https://github.com/psf/black) auto-formatter. Black is already configured as a pre-commit hook.
+- All files should be formatted and linted using [ruff](https://docs.astral.sh/ruff/). Ruff handles formatting, import sorting, and linting (replacing black, isort, and flake8). It runs automatically via pre-commit.
 
 - Use an editor with [EditorConfig](https://editorconfig.org/) support. The `.editorconfig` file in the repository defines style rules e.g. for indentation that must be followed.
 
-- Follow [PEP8](https://peps.python.org/pep-0008/) with some exceptions like the maximum line length. Use flake8 to check your code. This tool is also automatically run by pre-commit.
-
-- Sort your imports with [isort](https://pycqa.github.io/isort/). Pre-commit does that too.
+- Follow [PEP8](https://peps.python.org/pep-0008/) with some exceptions like the maximum line length.
 
 - Write docstrings at least for methods and functions. Docstrings for classes, attributes and global variables are very welcome too. Use either [numpydoc ](https://numpydoc.readthedocs.io/en/latest/format.html) / [reST](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html)/ [google ](https://github.com/google/styleguide/blob/gh-pages/pyguide.md#38-comments-and-docstrings) style for your docstrings. We haven't decided on one docstring format yet.
 
@@ -166,7 +133,7 @@ New icons are first added to src/vorta/assets/icons, and can be used with the `g
 Tests are in the folder `/tests`. Testing happens at the level of UI components. Calls to `borg` are mocked and can be replaced with some example json-output. To run tests:
 
 ```
-pytest
+uv run pytest
 ```
 
 ## Creating Commits, Opening PRs and Licensing
