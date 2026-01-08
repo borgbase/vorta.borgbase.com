@@ -19,3 +19,4 @@ color_scheme: borgbase
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
