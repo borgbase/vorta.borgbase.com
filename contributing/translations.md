@@ -8,32 +8,42 @@ parent: Contributing
 
 # Translations
 
-Translations are managed on [Transifex](https://www.Transifex.com/borgbase/vorta/). If you are interested in adding a new language, first let us know [here](https://github.com/borgbase/vorta/discussions/categories/translations). We will then set you up on Transifex. No coding skill are required for translations.
+Translations are managed directly in the repository as `.ts` XML files under `src/vorta/i18n/ts/`. AI-assisted translation is done via [Claude Code](https://code.claude.com/docs)'s `/translate` skill. Per-language glossaries in `.claude/skills/translate/glossaries/<lang>.md` enforce consistent terminology across translations.
+
+Currently supported languages: ar, cs, de, es, fi, fr, gl, it, nl, ru, sk, sv.
 
 ### Policy for Translations
 
-- No Google/AI or other automated translations.
-- Only native or as-good-as-native speakers should translate.
-- As there is a need for continued maintenance, a translator should be also a user of vorta, having some own interest in the translation (one-time translations are not that helpful if there is no one updating them regularly)
-- A translation must have >90% translated strings. If a translation falls and stays below that for a longer time, it will not be used by vorta and ultimately, it will get removed from the repository also.
+- Native or near-native speaker review is encouraged for all translations.
+- A translator should also be a user of Vorta, with ongoing interest in maintaining the translation.
+- A translation must have >90% translated strings. If it falls and stays below that for a longer time, it will not be used by Vorta and may be removed from the repository.
 
 ### Adding a New Language
 
 - Only add a new language if you are willing to also update the translation in future, when new strings are added and existing strings change.
-- Request a new language by opening a new issue on Github. We will then add it on Transifex.
+- Steps to add a new language:
+
+1. Copy an existing `.ts` file:
+   ```
+   $ cp src/vorta/i18n/ts/vorta.de.ts src/vorta/i18n/ts/vorta.XX.ts
+   ```
+2. Update the language attribute in the new file: `<TS version="2.1" language="XX">`
+3. Clear all existing translations (set entries to `type="unfinished"`)
+4. Run `/translate translate XX` in Claude Code
+5. Run `/translate compile` to compile `.ts` to `.qm`
+6. Test in the app: `LANG=XX vorta`
 
 ### Updating a Language
 
-- Please only work on a translation if you are a native speaker or you have similar language skills.
-- Open a new issue on Github.
-- Edit the language on Transifex.
+- Run `/translate missing` to check untranslated string counts per language
+- Run `/translate translate <lang>` to generate translations for a specific language
+- Review the diff to verify translation quality
+- Run `/translate compile` to compile updated `.ts` files to `.qm`
 
-### Using and Testing Transifex Translations
+### Using and Testing Translations
 
-- Extract from source files (needed after most code changes to update line number): `make translations-from-source`
-- Push to Transifex: `make translations-push`
-- Pull finished translations from Transifex: `make translations-pull`
-- Compile: `make translations-to-qm`
+- Extract from source files (needed after most code changes): `make translations-from-source`
+- Compile: `make translations-to-qm` or `/translate compile`
 - Test with specific translation: `LANG=de vorta`
 - Scale strings to test UI: `LANG=de TRANS_SCALE=200 vorta --foreground`
 
@@ -68,21 +78,8 @@ Add new strings for translation:
 
 ### Required Software
 
-To successfully run the translation-related Makefile targets, the translations maintainer needs:
+To work with translations, you need:
 
-- `make` tool
-- `pylupdate5` (from PyQt)
-- `lrelease` (from Qt package)
-- `tx` Transifex client (from [Github](https://github.com/transifex/cli), it will ask you for a API token when first running it)
-
-Install on Debian:
-
-```
-$ apt install qttools5-dev-tools pyqt5-dev-tools
-```
-
-Install on macOS via Homebrew:
-
-```
-$ cd requirements.d && brew bundle
-```
+- `make` — for running Makefile targets
+- `lrelease` — from Qt tools, for compiling `.ts` to `.qm`
+- [Claude Code](https://code.claude.com/docs) — for running `/translate` commands
