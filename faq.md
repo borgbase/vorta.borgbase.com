@@ -39,4 +39,3 @@ For general questions or to simply talk about Vorta, hit us up at [Matrix](https
 
 If you have found a bug or miss a feature, look into the existing [Github issues](https://github.com/borgbase/vorta/issues) or open a new [one](https://github.com/borgbase/vorta/issues/new/choose).
 
-If your questions are Borg-specific, join the #borgbackup IRC channel on chat.freenode.net instead. Matrix is very suitable to be used as an always-on IRC-client, simply [register/identify to NickServ](https://github.com/matrix-org/matrix-appservice-irc/wiki/End-user-FAQ#how-do-i-registeridentify-to-nickserv) and then join the room `#freenode_#borgbackup:matrix.org`.
