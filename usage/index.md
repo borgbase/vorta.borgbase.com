@@ -42,6 +42,10 @@ $ vorta --create 'Profile Name'
 
 This will trigger a backup run in the current Vorta application.
 
+### Shell commands and monitoring
+
+Each profile can run shell commands before and after a backup, for example to mount a drive or to ping a monitoring service so you get alerted when backups stop. Read more [here](shell-commands).
+
 ## Restore
 
 Once something bad happens to your files, you will want to restore them from a backup. Even better is to test restoring before you actually need it. Vorta offers two ways of restoring: First you can _mount_ and browse an archive to pick individual files. Or you can choose a folder and extract everything in it. The latter option is great for bulk restoring. Read more about restoring [here](restore).
