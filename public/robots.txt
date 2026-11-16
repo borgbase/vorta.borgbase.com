@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vorta.borgbase.com/sitemap-index.xml

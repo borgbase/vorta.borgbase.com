@@ -1,3 +1,4 @@
-/download   /install
-/download/linux /install/linux
-/download/macos /install/macos
+/download        /install/        301
+/download/linux  /install/linux/  301
+/download/macos  /install/macos/  301
+/sitemap.xml     /sitemap-index.xml 301
