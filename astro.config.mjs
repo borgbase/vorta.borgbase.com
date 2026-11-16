@@ -30,7 +30,7 @@ export default defineConfig({
 				{
 					tag: 'script',
 					attrs: {
-						async: true,
+						defer: true,
 						src: 'https://stats.snapdragon.cc/script.js',
 						'data-website-id': 'f95ad727-c90a-494b-9c39-dbdc8316cba8',
 					},
