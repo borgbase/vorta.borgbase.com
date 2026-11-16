@@ -1,7 +1,7 @@
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-.venv/
+node_modules/
+dist/
+.astro/
 .DS_Store
-.claude/
+.claude
+.env
+.venv/
